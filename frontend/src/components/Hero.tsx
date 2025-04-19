@@ -13,7 +13,7 @@ const Hero = () => {
     const nextVideoRef = useRef(null);
     const upComingVideoIndex = (currentIndex % totalVideos) + 1;
     const handleVideoLoad = () =>{
-        // const upComintVideoIndex = (currentIndex % totalVideos) + 1;
+        // const upComingVideoIndex = (currentIndex % totalVideos) + 1;
         setLoadedVideos((prev) => prev + 1);
     }
     const handleMiniVdClick = () => {
