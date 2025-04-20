@@ -34,8 +34,8 @@ A modern, responsive website for **Pathivara Innovations Pvt. Ltd.**, showcasing
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/<your-username>/pathivara-innovations.git
-   cd pathivara-innovations
+   git clone https://github.com/Shaurav-Bhandari/PathivaraInnovations.git
+   cd <the filename>
    ```
 2. **Install dependencies**
    ```bash
