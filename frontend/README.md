@@ -1,54 +1,109 @@
-# React + TypeScript + Vite
+# Pathivara Innovations Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for **Pathivara Innovations Pvt. Ltd.**, showcasing our services and digital expertise with engaging animations and clear content.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Animated Hero Section** using GSAP and ScrollTrigger
+- **Responsive Layout** with Tailwind CSS
+- **TypeScript + React** for robust, maintainable code
+- **Component-driven Architecture** for reusability and clarity
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 💻 Tech Stack
+
+- **Framework:** React (with the `react-jsx` TSX runtime)
+- **Language:** TypeScript
+- **Styles:** Tailwind CSS
+- **Animations:** GSAP 3 + ScrollTrigger
+- **Bundler:** Vite (or Next.js if configured)
+
+---
+
+## 🔧 Getting Started
+
+### Prerequisites
+
+- Node.js v16+
+- npm or yarn
+
+### Installation
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/<your-username>/pathivara-innovations.git
+   cd pathivara-innovations
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Development
+
+Start the development server with hot-reload:
+
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open your browser at `http://localhost:3000` (or the port indicated) to preview.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Production Build
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Generate optimized assets for deployment:
+
+```bash
+npm run build
+# or
+yarn build
 ```
+
+You can serve the `dist` (or `.next`) folder with any static host.
+
+---
+
+## 📁 Project Structure
+
+```
+/  
+├─ public/             # Static assets (images, favicon)
+├─ src/
+│   ├─ components/     # Reusable React components (Hero, Button)
+│   ├─ pages/          # Page-level components or routes
+│   ├─ styles/         # Tailwind config, global CSS
+│   └─ main.tsx        # Entry point
+├─ tsconfig.json       # TypeScript config
+├─ tailwind.config.js  # Tailwind CSS config
+└─ vite.config.ts      # Vite config (or next.config.js)
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open issues or pull requests for improvements:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/name`)
+3. Commit your changes (`git commit -m "feat: description"`)
+4. Push to your branch (`git push origin feature/name`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+---
+
+*Crafted with care by Pathivara Innovations Pvt. Ltd.*
+
