@@ -1,6 +1,7 @@
 import { useGSAP} from "@gsap/react";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/all";
+import {AnimatedTitle} from "./AnimatedTitle.tsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,9 +30,7 @@ export function About() {
                 <h2 className={"font-general text-sm uppercase md:text-[10px]"}>
                     Welcome to Pathivara Innovations!
                 </h2>
-                <div className={"mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]"}>
-                    We are your partners in digital transformation.
-                </div>
+                    <AnimatedTitle title={"We are your partners in digital transformation."} containerClass={"mt-5 !text-black text-center"} />
                 <div className={"about-subtext "}>
                     <p>
                         We craft bespoke software, cloud integrations and strategic consulting to help businesses thrive in a fast‑moving landscape—combining technical expertise, creative flair and an unwavering commitment to excellence.

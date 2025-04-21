@@ -5,9 +5,10 @@ interface ButtonProps {
     title: string;
     leftIcon?: ReactNode;
     containerClass?: string;
+    rightIcon?: ReactNode;
 }
 export const Button = (props:ButtonProps) => {
-    const { id, title, leftIcon, containerClass } = props;
+    const { id, title, leftIcon, containerClass, rightIcon } = props;
     return (
         <button id={id} className={`group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black ${containerClass}`}>
             {leftIcon}
@@ -17,7 +18,7 @@ export const Button = (props:ButtonProps) => {
                     {title}
                 </div>
             </span>
-            {/*{rightIcon}*/}
+            {rightIcon}
         </button>
         // <div id={id} className={containerClass}>
         //     {leftIcon && leftIcon}
