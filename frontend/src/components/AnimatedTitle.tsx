@@ -12,13 +12,15 @@ export function AnimatedTitle({
                                   containerClass = "",
                               }: TitleProps) {
     const containerRef = useRef<HTMLDivElement>(null);
+
+
     useEffect(() => {
         const ctx = gsap.context(() => {
             const titleAnimation = gsap.timeline({
                 scrollTrigger: {
                     trigger: containerRef.current,
                     start: '100 bottom',
-                    end: 'senter bottom',
+                    end: 'center bottom',
                     toggleActions: 'play none none reverse',
                 }
             });
