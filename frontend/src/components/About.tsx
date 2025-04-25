@@ -30,7 +30,7 @@ export function About() {
                 <h2 className={"font-general text-sm uppercase md:text-[10px]"}>
                     Welcome to Pathivara Innovations!
                 </h2>
-                    <AnimatedTitle title={"We are your partners in digital transformation."} containerClass={"mt-5 !text-black text-center"} />
+                    <AnimatedTitle title={"We are your partners in digital transformation."} containerClass={"mt-5 !text-black text-center sm:mx-32"} />
                 <div className={"about-subtext "}>
                     <p className={"text-grey-500"}>
                         We craft bespoke software, cloud integrations and strategic consulting to help businesses thrive in a fast‑moving landscape—combining technical expertise, creative flair and an unwavering commitment to excellence.

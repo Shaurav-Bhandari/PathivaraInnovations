@@ -1,4 +1,4 @@
-import {useRef, useState} from "react";
+import {useRef, useState, useEffect} from "react";
 import {Button} from "./Button.tsx";
 import {TiLocationArrow} from "react-icons/ti";
 import { useWindowScroll} from "react-use";
@@ -32,7 +32,7 @@ export function Navbar() {
         setLastScrollY(currentScrollY);
     }, [currentScrollY]);
     useEffect(() => {
-        gsap.to(navContainerRef, {
+        gsap.to(navContainerRef.current, {
             Y: isNavVisible ? 0 : -100,
             opacity: isNavVisible ? 1 : 0,
             duration: 0.2,

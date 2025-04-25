@@ -1,25 +1,27 @@
 /* app.css */
+/* app.css */
 @import "tailwindcss";
 @import url("https://fonts.cdnfonts.com/css/general-sans");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 
 /* 1. Theme variables → Tailwind will generate matching utilities:
    font-zentry, font-general, font-robert-regular, font-robert-medium,
    font-circular-web, bg-blue-50, bg-blue-75, … text-yellow-300, etc. */
 @theme {
   /* fonts */
-  --font-zentry: 'zentry-regular', sans-serif;
-  --font-general: 'General Sans', sans-serif;
-  --font-robert-regular: 'robert-regular', sans-serif;
-  --font-robert-medium: 'robert-medium', sans-serif;
-  --font-circular-web: 'circular-web', sans-serif;
+  --font-zentry:           'zentry-regular', sans-serif;
+  --font-general:          'General Sans',   sans-serif;
+  --font-robert-regular:   'robert-regular', sans-serif;
+  --font-robert-medium:    'robert-medium',  sans-serif;
+  --font-circular-web:     'circular-web',   sans-serif;
 
   /* colors */
-  --color-blue-50 : #dfdff0;
-  --color-blue-75 : #dfdff2;
-  --color-blue-100: #f0f2fa;
-  --color-blue-200: #010101;
-  --color-blue-300: #4fb7dd;
-  --color-violet-300: #5724ff;    /* fixed typo */
+  --color-blue-50:   #dfdff0;
+  --color-blue-75:   #dfdff2;
+  --color-blue-100:  #f0f2fa;
+  --color-blue-200:  #010101;
+  --color-blue-300:  #4fb7dd;
+  --color-violet-300: #5724ff;
   --color-yellow-100: #8e983f;
   --color-yellow-300: #edff66;
 }
@@ -60,6 +62,7 @@
     @apply border border-white/20;
   }
 
+  /* nav hover underline */
   .nav-hover-btn {
     @apply relative ms-10 font-general text-xs uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
   }
@@ -80,8 +83,7 @@
   }
   .hero-heading {
     @apply uppercase font-zentry font-black text-5xl
-    sm:right-10 sm:text-7xl
-    md:text-9xl lg:text-[12rem];
+    sm:text-7xl md:text-9xl lg:text-[12rem];
   }
 
   /* about section */
@@ -91,7 +93,9 @@
     font-circular-web text-lg md:max-w-[34rem];
   }
   .about-image {
-    @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+    @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center
+    -translate-x-1/2 overflow-hidden rounded-3xl
+    md:w-[30vw];
   }
 
   /* animations */
@@ -107,12 +111,20 @@
     will-change: opacity, transform;
   }
 
-  /* grid item hover effect */
+  /* bento cards */
   .bento-tilt_1 {
-    @apply relative col-span-2 overflow-hidden
-    rounded-md transition-transform duration-300 ease-out;
+    @apply relative col-span-2 overflow-hidden rounded-md
+    transition-transform duration-300 ease-out;
+  }
+  .bento-tilt_2 {
+    @apply relative col-span-1 row-span-1 overflow-hidden rounded-md
+    transition-transform duration-300 ease-out;
+  }
+  .bento-title {
+    @apply uppercase md:text-6xl text-4xl font-black font-zentry;
   }
 }
+
 @keyframes indicator-line {
   0% {
     height: 4px;

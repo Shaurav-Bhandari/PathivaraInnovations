@@ -42,7 +42,7 @@ export function AnimatedTitle({
             {title.split("<br />").map((line, lineIdx) => (
                 <div
                     key={lineIdx}
-                    className="flex-center max-w-full flex-wrap gap-2 px-10 md:gap-3"
+                    className="flex-center max-w-full flex-wrap gap-2 px-10 md:gap-3 sm:px-32"
                 >
                     {line.split(" ").map((word, wordIdx) => (
                         <span
